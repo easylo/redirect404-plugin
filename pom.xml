@@ -11,7 +11,7 @@
   </parent>
   <groupId>jp.ikedam.jenkins.plugins</groupId>
   <artifactId>redirect404</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>Redirect 404 Plugin</name>
