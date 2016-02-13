@@ -148,6 +148,18 @@ public final class Redirect404Filter extends Descriptor<Redirect404Filter> imple
                 checkStatus(sc);
                 super.setStatus(sc, sm);
             }
+            
+            @Override
+            public void sendError(int sc) throws IOException {
+                checkStatus(sc);
+                super.sendError(sc);
+            }
+            
+            @Override
+            public void sendError(int sc, String msg) throws IOException {
+                checkStatus(sc);
+                super.sendError(sc, msg);
+            }
         });
     }
     
